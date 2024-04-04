@@ -6,8 +6,9 @@ import Groove from "../../Assets/Projects/portfolio-1.jpg";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import gupshup from "../../Assets/Projects/portfolio-3.jpg";
 import quickbite from "../../Assets/Projects/portfolio-2.jpg";
-
-
+import Picturely from "../../Assets/Projects/portfolio-4.png";
+import MovieFinder from "../../Assets/Projects/portfolio-5.png";
+import Portfolio_react from "../../Assets/Projects/portfolio-6.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -43,14 +44,15 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={portfolio}
+              imgPath={Portfolio_react}
               isBlog={false}
-              title="personal portfolio"
-              description="Built personal portfolio, using HTML CSS and JS added dark mode functionality for ease of read"
-              ghLink="https://github.com/maaz-bin-hassan/Portfolio"
-              demoLink="https://maazbinhassan.vercel.app/"              
+              title="Portfolio in react js "
+              description="Built personal portfolio in react js, using HTML CSS and JS added  functionality for ease of read"
+              ghLink="https://github.com/maaz-bin-hassan/portfolio-in-react"
+              demoLink="https://portfolio-maaz-lyart.vercel.app/"              
             />
           </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={quickbite}
@@ -61,10 +63,37 @@ function Projects() {
               demoLink="https://023-21-0231-maaz-bin-hassan-cafe.vercel.app/"              
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={MovieFinder}
+              isBlog={false}
+              title="Movie Finder"
+              description="Online Movie Finder website which is made in react js and uses the TMDB API to fetch the movies and display them on the website"
+              ghLink="https://github.com/maaz-bin-hassan/Movie-Finder"
+              demoLink="https://movie-finder-psi-three.vercel.app/#/"              
+            />
+          </Col>
           
-
-          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Picturely}
+              isBlog={false}
+              title="Picturely"
+              description="Online Image search engine website which is made in react js and uses the Splash API to fetch the images and display them on the website"
+              ghLink="https://github.com/maaz-bin-hassan/Picturely"
+              demoLink="https://picturely.vercel.app/" 
+              />
+           </Col> 
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={portfolio}
+              isBlog={false}
+              title="personal portfolio"
+              description="Built personal portfolio, using HTML CSS and JS added dark mode functionality for ease of read"
+              ghLink="https://github.com/maaz-bin-hassan/Portfolio"
+              demoLink="https://maazbinhassan.vercel.app/"              
+            />
+          </Col>
           
         </Row>
       </Container>
