@@ -44,9 +44,9 @@ function Home2() {
                   Modern Javascript Library and Frameworks
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; 
               <i>
-                <b className="purple"> Next.js</b>
+                <b className="purple"> </b>
               </i>
             </p>
           </Col>
