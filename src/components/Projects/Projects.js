@@ -9,6 +9,9 @@ import quickbite from "../../Assets/Projects/portfolio-2.jpg";
 import Picturely from "../../Assets/Projects/portfolio-4.png";
 import MovieFinder from "../../Assets/Projects/portfolio-5.png";
 import Portfolio_react from "../../Assets/Projects/portfolio-6.png";
+import portfolio7 from "../../Assets/Projects/portfolio-7.png";
+import portfolio8 from "../../Assets/Projects/portfolio-8.png";
+
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -21,6 +24,24 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={portfolio7}
+              isBlog={false}
+              title="Stress Relief APP"
+              description="A stress management app with progress and mood tracking having meditation audios and exercise videos. Built with Flutter and youtube integration and audio playback."
+              ghLink="https://github.com/maaz-bin-hassan/StressRelief"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={portfolio8}
+              isBlog={false}
+              title="Note-Heaven APP"
+              description="AI powered note taking app . Built with flutter and gemini API with firebase as storage capable of holding notes recording audios and drawings and instant share with same network"
+              ghLink="https://github.com/maaz-bin-hassan/NoteHeaven"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Groove}
@@ -94,7 +115,6 @@ function Projects() {
               demoLink="https://maazbinhassan.vercel.app/"              
             />
           </Col>
-          
         </Row>
       </Container>
     </Container>
